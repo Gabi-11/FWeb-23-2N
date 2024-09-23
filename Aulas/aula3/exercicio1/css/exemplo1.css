@@ -1,0 +1,30 @@
+#primeiro-titulo{
+    color: rebeccapurple;
+}
+
+#segundo-titulo{
+    color: aqua;
+}
+
+#terceiro-titulo{
+    color: brown;
+}
+
+#quarto-titulo{
+    color: salmon;
+}
+
+#informações{
+    color: white;
+}
+
+ul{
+    color: white;
+}
+
+body{
+    /*background-image: url(../img/senhordosaneis.png);
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    background-color: black;
+}

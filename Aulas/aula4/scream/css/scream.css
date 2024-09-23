@@ -1,0 +1,24 @@
+#titulo{
+    color: yellow;
+    font-family: 'sedgwick ave','cursive'
+}
+
+p{
+  font-family: 'Caveat' 'cursive';  
+}
+
+body{
+    background-color: tomato;
+}
+
+#left{
+  padding-right: 40px;
+}
+
+#right img{
+  float: right;
+}
+
+#informações{
+  float: right;
+}

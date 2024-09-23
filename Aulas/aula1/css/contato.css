@@ -1,0 +1,23 @@
+#foto img{
+    background-image: url(../img/WhatsApp\ Image\ 2024-09-16\ at\ 21.34.12.png);
+    border-image: auto;
+    width: 400px
+}
+#corpo{
+    background-color: black;
+}
+#nome{
+    color: white;
+    padding: 20px 2px 3px 10px;
+}
+#diferenciais{
+    color: white;
+    padding: 20px 2px 3px 10px;
+}
+p{
+    color: white;
+    border-color: blue solid 20px;
+    padding: 20px 2px 3px 10px;
+}
+
+
