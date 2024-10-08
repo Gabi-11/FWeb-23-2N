@@ -1,0 +1,13 @@
+.dpanel{
+    background-color: green;
+    width: 800px;
+    height: 600px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 250px;
+    bottom: 150px;
+}

@@ -1,0 +1,71 @@
+.body{
+    background-color: black;
+}
+
+.busca{
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+    margin-right: 10px;
+    float: left;
+
+}
+
+.menu-conteudo{
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+    margin-right: 10px;
+    float: left;
+}
+
+.busca h2{
+    margin: 10px;
+}
+
+.busca form{
+    margin: 10px;
+}
+
+.menu-conteudo h2{
+    margin: 10px;
+}
+
+.menu-conteudo li{
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+
+}
+
+.menu-conteudo a{
+    background-color: blue;
+}
+
+.menu-conteudo{
+    clear: left;
+    margin-top: 10px; 
+    padding-bottom: 10px;
+}
+
+.busca input{
+    vertical-align: middle;
+}
+
+.destaque{
+    margin-top: 10px;
+}
+
+.menu-conteudo li ul{
+    display: none; /*por padrão escondida*/
+}
+
+.menu-conteudo li{
+    display: block;/*no mouse aparece*/
+}
+
+.menu-conteudo ul ul li{
+    background-color: #dcdcdc;
+}
+
+

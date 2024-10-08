@@ -1,0 +1,18 @@
+body{
+    background-color: black;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.item{
+    flex-basis: 200px;
+    background-color: blue;
+    align-items: center;
+    
+
+}

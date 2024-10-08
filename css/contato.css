@@ -1,0 +1,7 @@
+header a:hover{
+    background-color: green;
+}
+
+header a:active{
+    background-color: red;
+}
