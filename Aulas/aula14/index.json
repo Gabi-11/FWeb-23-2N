@@ -1,0 +1,13 @@
+"pessoas"[
+{
+"nome":"Fulano",
+"idade": 30,
+"local":{
+"pais":"Brasil",
+"uf":"RS",
+}
+
+},
+{
+"nome":"Beltrano",
+}]

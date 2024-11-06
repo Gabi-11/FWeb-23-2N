@@ -1,7 +1,90 @@
-header a:hover{
-    background-color: green;
+body {
+    font-family: sans-serif;
+    background-color: black;
 }
 
-header a:active{
-    background-color: red;
+#perfil {
+    display: flex; /* Usar flexbox para alinhamento lado a lado */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: flex-start; /* Alinha os itens ao topo */
+    margin: 50px 20px; /* Margens ao redor do contêiner */
 }
+
+#informacoes {
+    border: 5px solid blue; /* Mantém a borda azul */
+    padding: 15px;
+    margin-left: 20px; /* Adiciona espaço entre a foto e as informações */
+    border-radius: 10px; /* Adiciona cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Sombra suave */
+    flex: 1; /* Faz a seção de informações ocupar o espaço restante */
+}
+
+#foto-perfil {
+    width: 400px; /* Largura fixa para a foto */
+    text-align: center; /* Centraliza a imagem */
+}
+
+#foto-perfil img {
+    width: 100%; /* Ajusta a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+    transition: transform 0.3s; /* Transição suave */
+}
+
+#foto-perfil img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+h1, h2 {
+    text-align: center; /* Centraliza os títulos */
+    color: white;
+    margin: 10px 0; /* Adiciona margens para espaçamento */
+}
+
+p {
+    color: white;
+    line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+    text-align: justify; /* Justifica o texto para uma melhor leitura */
+}
+
+@media (max-width: 600px) {
+    #perfil {
+        flex-direction: column; /* Muda para coluna em telas pequenas */
+        align-items: center; /* Centraliza os itens */
+    }
+
+    #foto-perfil {
+        width: 80%; /* Ajusta a largura da imagem em dispositivos menores */
+    }
+
+    #informacoes {
+        margin-left: 0; /* Remove margem em dispositivos pequenos */
+        width: 80%; /* Faz a seção de informações ocupar a largura da tela */
+    }
+}
+
+.social-links {
+    margin-top: 15px; /* Espaço acima dos links */
+    text-align: center; /* Centraliza os links */
+}
+
+.social {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding da lista */
+}
+
+.social li {
+    display: inline; /* Faz os itens da lista ficarem em linha */
+    margin: 0 10px; /* Adiciona espaço entre os links */
+}
+
+.social a {
+    color: white; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s; /* Efeito de transição para mudança de cor */
+}
+
+.social a:hover {
+    color: blue; /* Muda a cor do link ao passar o mouse */
+}
+

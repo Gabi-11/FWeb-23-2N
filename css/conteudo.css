@@ -1,67 +1,103 @@
-.body{
+body {
     background-color: black;
+    color: white; 
+    font-family: "Times New Roman", Times, serif;
 }
 
-.busca{
+.busca {
     font-weight: bold;
-    text-transform: uppercase;
-    width: 230px;
-    margin-right: 10px;
-    float: left;
-
+    width: 100%; /* Largura total para a barra de busca */
+    max-width: 400px; /* Limita a largura da barra de busca */
+    margin: 20px 0; /* Margem em cima e embaixo */
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espaço entre o campo de busca e o botão */
+    padding: 10px;
+    background-color: #333; /* Fundo para destacar a barra de busca */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    float: left; /* Faz a busca flutuar para a esquerda */
 }
 
-.menu-conteudo{
+.busca h2 {
+    margin: 0;
+    text-align: left; /* Alinha o título à esquerda */
+}
+
+.busca input[type="search"] {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+}
+
+.busca button {
+    background-color: transparent; /* Fundo transparente para o botão */
+    border: none; /* Remove a borda */
+    cursor: pointer; /* Cursor de ponteiro para indicar interatividade */
+    padding: 8px; /* Adiciona um pouco de espaço ao redor do SVG */
+}
+
+.busca button:hover {
+    background-color: #777; /* Altera a cor de fundo ao passar o mouse */
+}
+
+.menu-conteudo {
+    width: 50%; /* Largura de 50% para o menu */
+    margin: 0; /* Remove a margem */
+    padding: 20px;
+    background-color: #1a75ff; /* Fundo azul */
+    color: white; /* Texto branco para contraste */
     font-weight: bold;
-    text-transform: uppercase;
-    width: 230px;
-    margin-right: 10px;
-    float: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    float: left; /* Faz o menu flutuar para a esquerda */
 }
 
-.busca h2{
-    margin: 10px;
+.menu-conteudo h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    text-align: left; /* Alinha o título à esquerda */
 }
 
-.busca form{
-    margin: 10px;
+.menu-conteudo ul {
+    padding: 0;
+    margin: 0;
 }
 
-.menu-conteudo h2{
-    margin: 10px;
+.menu-conteudo li {
+    background-color: #003d99; /* Azul escuro para contraste nos itens */
+    color: white;
+    margin-bottom: 8px;
+    padding: 10px;
+    list-style: none;
+    border-radius: 6px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra leve */
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Efeito de hover */
 }
 
-.menu-conteudo li{
-    background-color: white;
-    margin-bottom: 1px;
-    padding: 5px 10px;
-
+.menu-conteudo li:hover {
+    background-color: #0052cc; /* Azul mais claro ao passar o mouse */
+    transform: translateY(-3px); /* Elevação leve */
 }
 
-.menu-conteudo{
-    clear: left;
-    margin-top: 10px; 
-    padding-bottom: 10px;
+.menu-conteudo li a {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor do texto */
+    display: block;
 }
 
-.busca input{
-    vertical-align: middle;
+.menu-conteudo li ul {
+    display: none; /* Oculta os subitens inicialmente */
 }
 
-.destaque{
-    margin-top: 10px;
+.menu-conteudo li:hover ul {
+    display: block; /* Mostra os subitens ao passar o mouse */
 }
 
-.menu-conteudo li ul{
-    display: none; /*por padrão escondida*/
+.menu-conteudo ul ul li {
+    background-color: #3399ff; /* Azul mais claro para subitens */
+    padding: 8px;
+    border-radius: 4px;
+    margin: 5px 0;
 }
-
-.menu-conteudo li{
-    display: block;/*no mouse aparece*/
-}
-
-.menu-conteudo ul ul li{
-    background-color: #dcdcdc;
-}
-
-
