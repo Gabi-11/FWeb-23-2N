@@ -7,6 +7,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 main {
@@ -78,3 +79,20 @@ main {
     border-radius: 10px;
     box-shadow: -3px 4px 0 gray;
 }
+
+#AlturaPoke{
+    color: black;
+
+}
+
+#PesoPoke{
+    color: black;
+    left: 30px;
+}
+
+#Tipo2{
+    right: 50px;
+    
+}
+
+
