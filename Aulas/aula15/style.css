@@ -31,15 +31,15 @@ main {
 
 #TituloTipos{
     position: absolute;
-    top: 20%;
-    left: 30%;
+    top: 21%;
+    left: 27%;
     display: flex;
     gap: 50%;
 }
 
 #TituloNomePoke{
     position: absolute;
-    top: 53%;
+    top: 56%;
     left: 27%;
 }
 
@@ -63,7 +63,7 @@ main {
 #TituloPeso-Altura{
     position: absolute;
     top: 73%;
-    left: 20%;
+    left: 40%;
 }
 
 #divButtons{
