@@ -1,4 +1,4 @@
-html, body{
+html, body {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -7,7 +7,6 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 main {
@@ -18,32 +17,44 @@ main {
     position: relative;
 }
 
-#pokedexfigure{
+#pokedexfigure {
     width: 100%;
     height: 100%;
 }
 
-#pokemonfigure{
+#pokemonfigure {
     position: absolute;
     top: 40%;
     left: 30%;
 }
 
-#TituloTipos{
+#TituloTipos {
     position: absolute;
     top: 21%;
     left: 27%;
     display: flex;
-    gap: 50%;
+    justify-content: center;
+    width: 200px; /* Tamanho fixo para evitar deslocamento */
+    gap: 10px;
 }
 
-#TituloNomePoke{
+#Tipo1{
+    min-width: 199px; /* Garante que cada tipo ocupe o mesmo espaço */
+    text-align: center;
+}
+
+#Tipo2{
+    min-width: 120px; /* Garante que cada tipo ocupe o mesmo espaço */
+    text-align: center;
+}
+
+#TituloNomePoke {
     position: absolute;
     top: 56%;
     left: 27%;
 }
 
-#formNome{
+#formNome {
     position: absolute;
     top: 67%;
     left: 20%;
@@ -51,7 +62,7 @@ main {
     height: 5%;
 }
 
-#inputNome{
+#inputNome {
     height: 100%;
     width: 100%;
     border: 2px, solid black;
@@ -59,14 +70,31 @@ main {
     box-shadow: -3px 4px 0 gray;
 }
 
-
-#TituloPeso-Altura{
+#TituloPeso-Altura {
     position: absolute;
     top: 73%;
-    left: 40%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
 }
 
-#divButtons{
+#PesoPoke, #AlturaPoke {
+    font-size: 28px;
+    color: black;   
+}
+
+#PesoPoke {
+    color: black;
+    left: 30px;
+}
+
+#AlturaPoke {
+    color: black;
+}
+
+#divButtons {
     position: absolute;
     bottom: 5%;
     left: 30%;
@@ -74,25 +102,8 @@ main {
     gap: 50%;
 }
 
-.button{
+.button {
     border: 2px, solid black;
     border-radius: 10px;
     box-shadow: -3px 4px 0 gray;
 }
-
-#AlturaPoke{
-    color: black;
-
-}
-
-#PesoPoke{
-    color: black;
-    left: 30px;
-}
-
-#Tipo2{
-    right: 50px;
-    
-}
-
-

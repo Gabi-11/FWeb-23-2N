@@ -1,40 +1,120 @@
-/* stylelint-disable @stylistic/selector-list-comma-newline-after */
+/* Resetando margens e padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.blog-header-logo {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-    font-size: 2.25rem;
-  }
-  
-  .blog-header-logo:hover {
-    text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
-  }
-  
-  .flex-auto {
-    flex: 0 0 auto;
-  }
-  
-  .h-250 { height: 250px; }
-  @media (min-width: 768px) {
-    .h-md-250 { height: 250px; }
-  }
-  
-  /* Pagination */
-  .blog-pagination {
-    margin-bottom: 4rem;
-  }
-  
-  /*
-   * Blog posts
-   */
-  .blog-post {
-    margin-bottom: 4rem;
-  }
-  .blog-post-meta {
-    margin-bottom: 1.25rem;
-    color: #727272;
-  }
-  
+/* Corpo */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d0d0d0, #f0f0f0);
+  color: #333;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Seção de introdução */
+.introducao {
+  background: linear-gradient(to right, #333, #555);
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: 30px auto;
+}
+
+.introducao h4 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+/* Descrição inicial */
+h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 20px 0;
+  padding: 0 15px;
+}
+
+/* Seção de Trabalhos - Ajustando layout */
+.trabalhos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px auto;
+  width: 80%;
+}
+
+/* Trabalho individual */
+.trabalho-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Ajuste das imagens */
+.trabalho img {
+  width: 250px;
+  height: 200px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trabalho img:hover {
+  border-color: #3498db;
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Descrição ao lado */
+.descricao-trabalho {
+  width: 60%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.redes-sociais a {
+  display: inline-block;
+  margin: 10px 15px;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.redes-sociais a:hover {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+

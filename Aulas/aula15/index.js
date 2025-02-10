@@ -12,7 +12,6 @@ const formNome = document.querySelector("#formNome")
 const backGroundSound = document.querySelector("#backGroundSound")
 const input = document.querySelector("#inputNome")
 
-
 let IDPokemon = 1
 
 const fetchpokemon = async (pokemon) => {
@@ -24,35 +23,43 @@ const fetchpokemon = async (pokemon) => {
 const showPokemon = async (pokemon) => {
     const infoPokemon = await fetchpokemon(pokemon)
     IDPokemon = infoPokemon.id
-    IDPoke.innerHTML = infoPokemon.id
-    nomePoke.innerHTML = infoPokemon.name
+    IDPoke.innerHTML = `ID: ${infoPokemon.id}`
+    nomePoke.innerHTML = infoPokemon.name.charAt(0).toUpperCase() + infoPokemon.name.slice(1) // Capitaliza a primeira letra
     imgPoke.src = infoPokemon.sprites.front_default
-    Tipo1.innerHTML = infoPokemon.types[0].type.name
-    Tipo2.innerHTML = ''
-    Tipo2.innerHTML = infoPokemon.types[1].type.name
-    PesoPoke.innerHTML = infoPokemon.weight
-    AlturaPoke.innerHTML = infoPokemon.height
-    audioPoke.src = infoPokemon.cries.latest
-    
+
+    // Exibindo Tipos
+    Tipo1.innerHTML = infoPokemon.types[0].type.name.charAt(0).toUpperCase() + infoPokemon.types[0].type.name.slice(1) // Capitaliza o tipo
+    if (infoPokemon.types.length > 1) {
+        Tipo2.innerHTML = infoPokemon.types[1].type.name.charAt(0).toUpperCase() + infoPokemon.types[1].type.name.slice(1) // Capitaliza o tipo
+    } else {
+        Tipo2.innerHTML = '' // Deixa vazio se não houver o segundo tipo
+    }
+
+    // Exibindo Peso e Altura
+    PesoPoke.innerHTML = `Peso: ${infoPokemon.weight / 10} kg` // Exibe peso com a unidade
+    AlturaPoke.innerHTML = `Altura: ${infoPokemon.height / 10} m` // Exibe altura com a unidade
+
+    // Atualizando áudio
+    audioPoke.src = infoPokemon.sprites.front_shiny
+
+    // Tocar áudio
+    audioPoke.play()
 }
+
 showPokemon(IDPokemon)
-audioPoke.play()
 
 formNome.addEventListener("submit", (event) => {
     event.preventDefault();
     showPokemon(input.value.toLowerCase())
-    
-    
 })
 
 btnA.addEventListener("click", (event) => {
     event.preventDefault()
-    IDPokemon-=1;
-        showPokemon(IDPokemon)
+    IDPokemon -= 1;
+    showPokemon(IDPokemon)
 })
 
 btnB.addEventListener("click", (event) => {
-    IDPokemon+=1
-        showPokemon(IDPokemon)
-    
+    IDPokemon += 1
+    showPokemon(IDPokemon)
 })
