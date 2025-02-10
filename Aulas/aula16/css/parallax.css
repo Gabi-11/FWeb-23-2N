@@ -1,9 +1,12 @@
 .parallax-window{
     min-height: 400px;
     background: transparent;
+    background-attachment: fixed;
+
 }
 
 .teste{
     min-height: 400px;
     background-color: wheat;
+
 }
