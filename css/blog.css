@@ -1,11 +1,10 @@
-/* Resetando margens e padding */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Corpo */
+
 body {
   font-family: Arial, sans-serif;
   background: linear-gradient(to bottom, #d0d0d0, #f0f0f0);
@@ -13,7 +12,7 @@ body {
   padding: 20px;
 }
 
-/* Cabeçalho */
+
 header {
   background-color: #333;
   color: white;
@@ -22,7 +21,7 @@ header {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Seção de introdução */
+
 .introducao {
   background: linear-gradient(to right, #333, #555);
   color: white;
@@ -46,7 +45,7 @@ header h1 {
   font-size: 2.5rem;
 }
 
-/* Descrição inicial */
+
 h4 {
   text-align: center;
   font-size: 1.2rem;
@@ -55,7 +54,6 @@ h4 {
   padding: 0 15px;
 }
 
-/* Seção de Trabalhos - Ajustando layout */
 .trabalhos {
   display: flex;
   flex-direction: column;
@@ -64,7 +62,6 @@ h4 {
   width: 80%;
 }
 
-/* Trabalho individual */
 .trabalho-container {
   display: flex;
   align-items: center;
@@ -72,7 +69,6 @@ h4 {
   margin-bottom: 40px;
 }
 
-/* Ajuste das imagens */
 .trabalho img {
   width: 250px;
   height: 200px;
@@ -87,14 +83,13 @@ h4 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Descrição ao lado */
 .descricao-trabalho {
   width: 60%;
   font-size: 1.1rem;
   line-height: 1.6;
 }
 
-/* Rodapé */
+
 footer {
   background-color: #333;
   color: white;

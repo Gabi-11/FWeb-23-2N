@@ -6,14 +6,14 @@ body {
 
 .busca {
     font-weight: bold;
-    width: 100%; /* Largura total para a barra de busca */
-    max-width: 400px; /* Limita a largura da barra de busca */
-    margin: 20px 0; /* Margem em cima e embaixo */
+    width: 100%; 
+    max-width: 400px; 
+    margin: 20px 0; 
     display: flex;
     align-items: center;
-    gap: 10px; /* Espaço entre o campo de busca e o botão */
+    gap: 10px; 
     padding: 10px;
-    background-color: #333; /* Fundo para destacar a barra de busca */
+    background-color: #333; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
     float: left; /* Faz a busca flutuar para a esquerda */
@@ -34,8 +34,8 @@ body {
 .busca button {
     background-color: transparent; /* Fundo transparente para o botão */
     border: none; /* Remove a borda */
-    cursor: pointer; /* Cursor de ponteiro para indicar interatividade */
-    padding: 8px; /* Adiciona um pouco de espaço ao redor do SVG */
+    cursor: pointer; 
+    padding: 8px; 
 }
 
 .busca button:hover {
@@ -43,7 +43,7 @@ body {
 }
 
 .menu-conteudo {
-    width: 50%; /* Largura de 50% para o menu */
+    width: 50%; 
     margin: 0; /* Remove a margem */
     padding: 20px;
     background-color: #1a75ff; /* Fundo azul */
@@ -57,7 +57,7 @@ body {
 .menu-conteudo h2 {
     margin-bottom: 20px;
     font-size: 1.5em;
-    text-align: left; /* Alinha o título à esquerda */
+    text-align: left; 
 }
 
 .menu-conteudo ul {
@@ -66,37 +66,37 @@ body {
 }
 
 .menu-conteudo li {
-    background-color: #003d99; /* Azul escuro para contraste nos itens */
+    background-color: #003d99; 
     color: white;
     margin-bottom: 8px;
     padding: 10px;
     list-style: none;
-    border-radius: 6px; /* Bordas arredondadas */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra leve */
-    transition: transform 0.3s ease, background-color 0.3s ease; /* Efeito de hover */
+    border-radius: 6px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease, background-color 0.3s ease; 
 }
 
 .menu-conteudo li:hover {
-    background-color: #0052cc; /* Azul mais claro ao passar o mouse */
-    transform: translateY(-3px); /* Elevação leve */
+    background-color: #0052cc; 
+    transform: translateY(-3px); 
 }
 
 .menu-conteudo li a {
     text-decoration: none;
-    color: inherit; /* Mantém a cor do texto */
+    color: inherit; 
     display: block;
 }
 
 .menu-conteudo li ul {
-    display: none; /* Oculta os subitens inicialmente */
+    display: none; 
 }
 
 .menu-conteudo li:hover ul {
-    display: block; /* Mostra os subitens ao passar o mouse */
+    display: block; 
 }
 
 .menu-conteudo ul ul li {
-    background-color: #3399ff; /* Azul mais claro para subitens */
+    background-color: #3399ff; 
     padding: 8px;
     border-radius: 4px;
     margin: 5px 0;

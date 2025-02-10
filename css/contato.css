@@ -4,19 +4,19 @@ body {
 }
 
 #perfil {
-    display: flex; /* Usar flexbox para alinhamento lado a lado */
+    display: flex; 
     justify-content: center; /* Centraliza o conteúdo */
     align-items: flex-start; /* Alinha os itens ao topo */
-    margin: 50px 20px; /* Margens ao redor do contêiner */
+    margin: 50px 20px;
 }
 
 #informacoes {
-    border: 5px solid blue; /* Mantém a borda azul */
+    border: 5px solid blue; 
     padding: 15px;
     margin-left: 20px; /* Adiciona espaço entre a foto e as informações */
     border-radius: 10px; /* Adiciona cantos arredondados */
     box-shadow: 0 0 10px rgba(0, 0, 255, 0.5); /* Sombra suave */
-    flex: 1; /* Faz a seção de informações ocupar o espaço restante */
+    flex: 1; 
 }
 
 #foto-perfil {
@@ -44,7 +44,7 @@ h1, h2 {
 p {
     color: white;
     line-height: 1.6; /* Aumenta o espaçamento entre linhas */
-    text-align: justify; /* Justifica o texto para uma melhor leitura */
+    text-align: justify; 
 }
 
 @media (max-width: 600px) {
@@ -54,12 +54,12 @@ p {
     }
 
     #foto-perfil {
-        width: 80%; /* Ajusta a largura da imagem em dispositivos menores */
+        width: 80%; 
     }
 
     #informacoes {
         margin-left: 0; /* Remove margem em dispositivos pequenos */
-        width: 80%; /* Faz a seção de informações ocupar a largura da tela */
+        width: 80%;
     }
 }
 
